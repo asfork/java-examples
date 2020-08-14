@@ -2,6 +2,7 @@ package concurrent;
 
 public class VolatileExample {
     public static volatile int found = 0;
+    // public static int found = 0;
 
     public static void change() {
         found = 1;

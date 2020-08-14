@@ -12,7 +12,6 @@ public class FutureTaskExample {
             return "开水";
         });
         Thread thread = new Thread(futureTask);
-
         thread.start();
         // do other thing
 
@@ -23,7 +22,6 @@ public class FutureTaskExample {
         System.out.println(Thread.currentThread().getName() + ":" + "火锅食材准备好了");
         String shicai = "火锅食材";
         // 开水已经稍好，我们取得烧好的开水
-
         String boilWater = futureTask.get();
         System.out.println(Thread.currentThread().getName() + ":" + boilWater + "和" + shicai + "已经准备好，我们可以开始打火锅啦");
     }
